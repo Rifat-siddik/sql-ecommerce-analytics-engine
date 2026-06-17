@@ -4,14 +4,7 @@ A relational database architecture developed for an e-commerce platform using **
 
 ---
 
-## 📐 Database Architecture (ER Diagram)
-
-Below is the conceptual blueprint of the database. It handles customers, product cataloging, and transaction breakdowns.
-
-*(You can export your diagram from dbdiagram.io as a PNG, save it in this folder, and link it here)*
-![ER Diagram Placeholder](https://via.placeholder.com/800x400.png?text=E-Commerce+Schema+ER+Diagram)
-
-## 📐 Database Architecture (ER Diagram)
+## Database Architecture (ER Diagram)
 
 Below is the live relational architecture of the e-commerce database generated dynamically:
 
@@ -68,7 +61,7 @@ erDiagram
 
 ---
 
-## 🚀 Getting Started (How to Run)
+##  Getting Started (How to Run)
 
 ### Prerequisites
 * MySQL Server & MySQL Workbench installed locally.
@@ -82,7 +75,7 @@ erDiagram
 
 ---
 
-## 📊 Business Analytics Queries Implemented
+##  Business Analytics Queries Implemented
 
 The analytical core of this project transforms raw tables into structured reports to answer real-world business performance questions:
 
@@ -100,7 +93,7 @@ The analytical core of this project transforms raw tables into structured report
 
 ---
 
-## 🛠️ Core SQL Concepts Demonstrated
+## Core SQL Concepts Demonstrated
 * **Database Definition Language (DDL):** Schema construction using `CREATE DATABASE` and `CREATE TABLE` structures.
 * **Database Manipulation Language (DML):** Secure population constraints using `INSERT INTO` parameters.
 * **Data Sifting & Structuring:** Implementing relational operators (`JOIN`, `LEFT JOIN`), filter mechanics (`WHERE`, `IS NULL`), grouping (`GROUP BY`), sorting workflows (`ORDER BY DESC`), and basic aggregation expressions (`SUM`).
@@ -111,7 +104,7 @@ The analytical core of this project transforms raw tables into structured report
 **Rifat Siddik**
 *Database Learning Project — 2026*
 
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/YOUR_USERNAME)
+[![GitHub]([https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/YOUR_USERNAME](https://github.com/Rifat-siddik))
 
 ---
 
