@@ -11,6 +11,54 @@ Below is the conceptual blueprint of the database. It handles customers, product
 *(You can export your diagram from dbdiagram.io as a PNG, save it in this folder, and link it here)*
 ![ER Diagram Placeholder](https://via.placeholder.com/800x400.png?text=E-Commerce+Schema+ER+Diagram)
 
+## 📐 Database Architecture (ER Diagram)
+
+Below is the live relational architecture of the e-commerce database generated dynamically:
+
+```mermaid
+erDiagram
+    USERS ||--o{ ORDERS : "places"
+    CATEGORIES ||--o{ PRODUCTS : "contains"
+    ORDERS ||--o{ ORDER_ITEMS : "includes"
+    PRODUCTS ||--o{ ORDER_ITEMS : "ordered_in"
+
+    USERS {
+        int user_id PK
+        string first_name
+        string last_name
+        string email UK
+        timestamp created_at
+    }
+
+    CATEGORIES {
+        int category_id PK
+        string category_name
+    }
+
+    PRODUCTS {
+        int product_id PK
+        string product_name
+        decimal price
+        int stock_quantity
+        int category_id FK
+    }
+
+    ORDERS {
+        int order_id PK
+        int user_id FK
+        timestamp order_date
+        decimal total_amount
+        string status
+    }
+
+    ORDER_ITEMS {
+        int order_item_id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+        decimal unit_price
+    }
+
 ### Core Schema Design:
 1. **`users`**: Stores user registration info (first name, last name, unique email, and account creation timestamp).
 2. **`categories`**: Product taxonomy lookup table (e.g., Electronics, Clothing).
