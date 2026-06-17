@@ -1,5 +1,7 @@
 # E-Commerce Database Design & Business Analytics Engine
 
+![Project Pipeline and Analytics View](pipeline_analytics.jpeg)
+
 A relational database architecture developed for an e-commerce platform using **MySQL**. This project focuses on structured schema design, establishing referential integrity via explicit foreign keys, and implementing data analytics queries to extract core business intelligence (BI) metrics from transactional records.
 
 📐 Database Architecture (ER Diagram)
