@@ -2,37 +2,32 @@
 
 A relational database architecture developed for an e-commerce platform using **MySQL**. This project focuses on structured schema design, establishing referential integrity via explicit foreign keys, and implementing data analytics queries to extract core business intelligence (BI) metrics from transactional records.
 
----
-
-## Database Architecture (ER Diagram)
-
+📐 Database Architecture (ER Diagram)
 Below is the live relational architecture of the e-commerce database generated dynamically:
 
-```mermaid
+Code snippet
 erDiagram
-    USERS ||--o{ ORDERS : "places"
-    CATEGORIES ||--o{ PRODUCTS : "contains"
-    ORDERS ||--o{ ORDER_ITEMS : "includes"
-    PRODUCTS ||--o{ ORDER_ITEMS : "ordered_in"
+    USERS ||--o{ ORDERS : places
+    CATEGORIES ||--o{ PRODUCTS : contains
+    ORDERS ||--o{ ORDER_ITEMS : includes
+    PRODUCTS ||--o{ ORDER_ITEMS : ordered_in
 
     USERS {
         int user_id PK
-        string first_name
-        string last_name
+        string full_name
         string email UK
-        timestamp created_at
+        timestamp joined_at
     }
 
     CATEGORIES {
         int category_id PK
-        string category_name
+        string name
     }
 
     PRODUCTS {
         int product_id PK
-        string product_name
+        string name
         decimal price
-        int stock_quantity
         int category_id FK
     }
 
@@ -40,18 +35,16 @@ erDiagram
         int order_id PK
         int user_id FK
         timestamp order_date
-        decimal total_amount
-        string status
+        decimal total
     }
 
     ORDER_ITEMS {
-        int order_item_id PK
+        int item_id PK
         int order_id FK
         int product_id FK
-        int quantity
+        int qty
         decimal unit_price
     }
-
 ### Core Schema Design:
 1. **`users`**: Stores user registration info (first name, last name, unique email, and account creation timestamp).
 2. **`categories`**: Product taxonomy lookup table (e.g., Electronics, Clothing).
