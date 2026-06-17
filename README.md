@@ -56,4 +56,18 @@ The analytical core of this project transforms raw tables into structured report
 * **Database Definition Language (DDL):** Schema construction using `CREATE DATABASE` and `CREATE TABLE` structures.
 * **Database Manipulation Language (DML):** Secure population constraints using `INSERT INTO` parameters.
 * **Data Sifting & Structuring:** Implementing relational operators (`JOIN`, `LEFT JOIN`), filter mechanics (`WHERE`, `IS NULL`), grouping (`GROUP BY`), sorting workflows (`ORDER BY DESC`), and basic aggregation expressions (`SUM`).
-* 
+
+
+## 👨‍💻 Author
+
+**Rifat Siddik**
+*Database Learning Project — 2026*
+
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/YOUR_USERNAME)
+
+---
+
+<div align="center">
+
+**⭐ Star this repo if you found it useful!**
+
